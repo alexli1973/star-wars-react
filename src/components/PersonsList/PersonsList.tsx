@@ -43,7 +43,7 @@ const PersonsList: React.FC<PersonsListProps> = ({ personsList, setPerson }) => 
     };
 
     const handleDelete = (index: number) => {
-        const updatedPeople = personsList.filter((_: any, i: number) => i !== index);
+        const updatedPeople = personsList.filter((el: IPerson, i: number) => i !== index);
         setPerson(updatedPeople);
     };
 
